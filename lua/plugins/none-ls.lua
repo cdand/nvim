@@ -5,9 +5,15 @@ return {
 		null_ls.setup({
 			sources = {
 				null_ls.builtins.formatting.stylua,
-				--			null_ls.builtins.formatting.yamllint,
-				null_ls.builtins.diagnostics.ansiblelint,
-				--				null_ls.builtins.formatting.ansiblelint,
+				null_ls.builtins.formatting.prettier,
+				null_ls.builtins.formatting.rubocop,
+				null_ls.builtins.formatting.black,
+				null_ls.builtins.formatting.isort,
+				null_ls.builtins.diagnostics.eslint_d,
+				null_ls.builtins.diagnostics.rubocop,
+        -- null_ls.builtins.formatting.ansiblelint,
+        -- null_ls.builtins.formatting.yamllint,
+        -- null_ls.builtins.diagnostics.ansiblelint,
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
