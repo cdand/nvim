@@ -10,4 +10,5 @@ vim.g.mapleader = " "
 -- Leave this commented for now until we need it.
 -- vim.g.maplocalleader = "\\"
 
+require("vim-options")
 require("lazy").setup("plugins")
