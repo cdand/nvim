@@ -10,9 +10,4 @@ vim.g.mapleader = " "
 -- Leave this commented for now until we need it.
 -- vim.g.maplocalleader = "\\"
 
-require("lazy").setup({
-  spec = {
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 }
-  },
-  checker = { enabled = true },
-})
+require("lazy").setup("plugins")
